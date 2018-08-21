@@ -13,14 +13,15 @@ public class SeleniumTestMethods {
 	
 	public SeleniumTestMethods() {
 		System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver.exe");
-		WebDriver webDriver = new ChromeDriver();
+		webDriver = new ChromeDriver();
 		webDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		webDriver.manage().window().maximize();
 	}
 	public void goToPage() {
-		webDriver.get("www.youtube.com");
+		webDriver.get("http://beta1.matchi.se/");
 	}
 	public void LogInAddUserandPass(String username, String password) {
-		WebElement element = webDriver.findElement(By.name("Logga in"));
+		WebElement element = webDriver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul[2]/li[2]/a"));
 		element.click();
 		element =  webDriver.findElement(By.id("username"));
 		element.clear();
@@ -32,5 +33,9 @@ public class SeleniumTestMethods {
 	public void clickByClassName(String className) {
 		WebElement element = webDriver.findElement(By.className(className));
 		element.click();
+	}
+	public String getTextByXpath(String xpath) {
+		WebElement element = webDriver.findElement(By.xpath(xpath));
+		return element.getText();
 	}
 }

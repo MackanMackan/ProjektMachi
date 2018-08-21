@@ -28,12 +28,13 @@ public class MachiTestSteps {
 
 	@When("^I click the log in button$")
 	public void i_click_the_log_in_button() throws Throwable {
-	    stm.clickByClassName("btn-lg");
+	    stm.clickByClassName("btn-success");
 	}
 
 	@Then("^I am logged in$")
 	public void i_am_logged_in() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	   if(!stm.getTextByXpath("//*[@id=\"wrap-content\"]/section[1]/div/div/div/div[1]/div[1]/div[2]/h4/a").equals("Mjuk Varutestare")) {
+		   throw new Exception();
+	   }
 	}
 }

@@ -9,6 +9,9 @@ public class MachiTestSteps {
 	public MachiTestSteps() {
 	}
 	SeleniumTestMethods stm = new SeleniumTestMethods();
+	 
+	
+	// Userstory6: Log in to Machi website//
 	
 	@Given("^I am on the Machi site$")
 	public void i_am_on_the_Machi_site() throws Throwable {
@@ -36,4 +39,8 @@ public class MachiTestSteps {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
 	}
+	
+	//Userstory1: Search a sport court//
+	
+	//Userstory2: Select date and time //
 }

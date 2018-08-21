@@ -9,6 +9,9 @@ public class MachiTestSteps {
 	public MachiTestSteps() {
 	}
 	SeleniumTestMethods stm = new SeleniumTestMethods();
+	 
+	
+	// Userstory6: Log in to Machi website//
 	
 	@Given("^I am on the Machi site$")
 	public void i_am_on_the_Machi_site() throws Throwable {

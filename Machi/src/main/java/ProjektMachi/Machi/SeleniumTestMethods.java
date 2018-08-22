@@ -20,7 +20,7 @@ public class SeleniumTestMethods {
 	public void goToPage() {
 		webDriver.get("http://beta1.matchi.se/");
 	}
-	public void LogInAddUserandPass(String username, String password) {
+	public void logInAddUserAndPass(String username, String password) {
 		WebElement element = webDriver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul[2]/li[2]/a"));
 		element.click();
 		element =  webDriver.findElement(By.id("username"));
@@ -37,5 +37,9 @@ public class SeleniumTestMethods {
 	public String getTextByXpath(String xpath) {
 		WebElement element = webDriver.findElement(By.xpath(xpath));
 		return element.getText();
+	}
+	public void login() {
+		logInAddUserAndPass("mjukvarutestare@mailinator.com","mjukvarutestare");
+		clickByClassName("btn-success");
 	}
 }

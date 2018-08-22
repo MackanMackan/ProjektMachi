@@ -25,7 +25,7 @@ public class MachiTestSteps {
 
 	@When("^I use username \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void i_use_username_and_password(String arg1, String arg2) throws Throwable {
-	    stm.LogInAddUserandPass(arg1, arg2);
+	    stm.logInAddUserAndPass(arg1, arg2);
 	}
 
 

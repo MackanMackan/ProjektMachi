@@ -40,4 +40,38 @@ public class MachiTestSteps {
 		   throw new Exception();
 	   }
 	}
+	
+	//Userstory2: Select activity date
+	
+	@Given("^I am on Matchi website$")
+	public void i_am_on_Matchi_website() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I select a date in the future$")
+	public void i_select_a_date_in_the_future() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I select a sport$")
+	public void i_select_a_sport() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I click smash$")
+	public void i_click_smash() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^I see all the available time slots$")
+	public void i_see_all_the_available_time_slots() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
 }

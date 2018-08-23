@@ -42,4 +42,7 @@ public class SeleniumTestMethods {
 		logInAddUserAndPass("mjukvarutestare@mailinator.com","mjukvarutestare");
 		clickByClassName("btn-success");
 	}
+	public void selectDate() {
+		
+	}
 }

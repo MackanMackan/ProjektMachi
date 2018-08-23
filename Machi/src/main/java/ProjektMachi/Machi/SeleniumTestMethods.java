@@ -3,6 +3,7 @@ package ProjektMachi.Machi;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -50,6 +51,24 @@ public class SeleniumTestMethods {
 	public void clickByCss(String cssSelector) {
 		WebElement element = webDriver.findElement(By.cssSelector(cssSelector));
 		element.click();
+	}
+	
+	public void enterSearchTextXpath(String text, String xpath) {
+		clickByXPath(xpath);
+		WebElement element =webDriver.findElement(By.xpath(xpath));
+		element.clear();
+		element.sendKeys(text);
+		element.sendKeys(Keys.ENTER);
+		
+	}
+	
+	public void enterSearchTextCss(String text, String css) {
+		clickByCss(css);
+		WebElement element =webDriver.findElement(By.cssSelector(css));
+		element.clear();
+		element.sendKeys(text);
+		element.sendKeys(Keys.ENTER);
+		
 	}
 	
 	

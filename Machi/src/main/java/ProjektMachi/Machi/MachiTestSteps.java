@@ -96,18 +96,18 @@ public class MachiTestSteps {
 	
 	//Userstory2: Select activity date	
 	
-	//User story1
+	
+	
+	//User story1: Search for a sport hall
 	
 	@When("^I enter the \"([^\"]*)\" of a Sport Hall$")
 	public void i_enter_the_of_a_Sport_Hall(String arg1) throws Throwable {
 	     
-		//WebElement element = webDriver.findElement(By.xpath("//a[contains(text(),'Anläggningar')]"));
-		
-	  //*[@id="navbar-collapse"]/ul[1]/li[2]/a
-	    //#navbar-collapse > ul.nav.navbar-nav.navbar-left > li:nth-child(2) > a
-	  //*[@id="navbar-collapse"]/ul[1]/li[3]/a      xpath- för matchning
-	  //a[contains(text(),'Anläggningar')]
-	  //*[@id="q"]
+		stm.clickByXPath("//a[contains(text(),'Anläggningar')]");
+		//stm.clickByXPath("//*[@id=\"q\"]");
+		stm.enterSearchTextXpath(arg1, "//*[@id=\"q\"]");
+		//element.sendKeys(searchText);
+		//element.sendKeys(Keys.ENTER);
 	}
 	
 	@When("^As I click the name of the Sport Hall$")

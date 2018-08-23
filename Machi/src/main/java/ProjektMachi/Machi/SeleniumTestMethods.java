@@ -44,11 +44,11 @@ public class SeleniumTestMethods {
 	}
 
 	public void clickByXPath(String xpath) {
-		WebElement element = webDriver.findElement(By.className(xpath));
+		WebElement element = webDriver.findElement(By.xpath(xpath));
 		element.click();
 	}
 	public void clickByCss(String cssSelector) {
-		WebElement element = webDriver.findElement(By.className(cssSelector));
+		WebElement element = webDriver.findElement(By.cssSelector(cssSelector));
 		element.click();
 	}
 	

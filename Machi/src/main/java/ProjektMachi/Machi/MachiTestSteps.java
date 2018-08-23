@@ -40,6 +40,7 @@ public class MachiTestSteps {
 		   throw new Exception();
 	   }
 	}
+
 	@Given("^I am logged in to Matchi$")
 	public void i_am_logged_in_to_Matchi() throws Throwable {
 	    stm.goToPage("http://beta1.matchi.se");
@@ -88,3 +89,9 @@ public class MachiTestSteps {
 
 
 }
+
+	
+	//Userstory2: Select activity date		
+
+
+

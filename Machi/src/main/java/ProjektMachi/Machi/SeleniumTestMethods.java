@@ -39,9 +39,10 @@ public class SeleniumTestMethods {
 		return element.getText();
 	}
 	public void login() {
-		logInAddUserAndPass("mjukvarutestare@mailinator.com","mjukvarutestare");
+		logInAddUserAndPass("mjukvarutestare4@mailinator.com","mjukvarutestare");
 		clickByClassName("btn-success");
 	}
+
 	public void clickByXPath(String xpath) {
 		WebElement element = webDriver.findElement(By.className(xpath));
 		element.click();
@@ -49,5 +50,11 @@ public class SeleniumTestMethods {
 	public void clickByCss(String cssSelector) {
 		WebElement element = webDriver.findElement(By.className(cssSelector));
 		element.click();
+	}
+	
+	
+	public void selectDate() {
+
+
 	}
 }

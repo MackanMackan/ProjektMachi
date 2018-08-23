@@ -17,8 +17,8 @@ public class SeleniumTestMethods {
 		webDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		webDriver.manage().window().maximize();
 	}
-	public void goToPage() {
-		webDriver.get("http://beta1.matchi.se/");
+	public void goToPage(String url) {
+		webDriver.get(url);
 	}
 	public void logInAddUserAndPass(String username, String password) {
 		WebElement element = webDriver.findElement(By.xpath("//*[@id=\"navbar-collapse\"]/ul[2]/li[2]/a"));
@@ -41,5 +41,13 @@ public class SeleniumTestMethods {
 	public void login() {
 		logInAddUserAndPass("mjukvarutestare@mailinator.com","mjukvarutestare");
 		clickByClassName("btn-success");
+	}
+	public void clickByXPath(String xpath) {
+		WebElement element = webDriver.findElement(By.className(xpath));
+		element.click();
+	}
+	public void clickByCss(String cssSelector) {
+		WebElement element = webDriver.findElement(By.className(cssSelector));
+		element.click();
 	}
 }

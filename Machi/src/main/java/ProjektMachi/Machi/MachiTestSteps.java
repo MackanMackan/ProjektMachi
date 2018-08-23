@@ -50,7 +50,7 @@ public class MachiTestSteps {
 	
 	@When("^I enter the \"([^\"]*)\" of a Sport Hall$")
 	public void i_enter_the_of_a_Sport_Hall(String arg1) throws Throwable {
-	    
+	     
 		//WebElement element = webDriver.findElement(By.xpath("//a[contains(text(),'Anläggningar')]"));
 		
 	  //*[@id="navbar-collapse"]/ul[1]/li[2]/a

@@ -40,4 +40,7 @@ public class MachiTestSteps {
 		   throw new Exception();
 	   }
 	}
+	
+	//Userstory2: Select activity date		
+
 }

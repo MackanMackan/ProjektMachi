@@ -42,8 +42,12 @@ public class SeleniumTestMethods {
 		logInAddUserAndPass("mjukvarutestare4@mailinator.com","mjukvarutestare");
 		clickByClassName("btn-success");
 	}
+	
 	public void clickByCss(String cssSelector) {
 		WebElement element = webDriver.findElement(By.className(cssSelector));
 		element.click();
+	}
+	public void selectDate() {
+
 	}
 }

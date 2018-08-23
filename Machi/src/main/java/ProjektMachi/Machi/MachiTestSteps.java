@@ -91,7 +91,7 @@ public class MachiTestSteps {
 	}
 
 
-}
+
 
 	
 	//Userstory2: Select activity date	
@@ -123,6 +123,6 @@ public class MachiTestSteps {
 	}
 
 
-
+	}
 
 

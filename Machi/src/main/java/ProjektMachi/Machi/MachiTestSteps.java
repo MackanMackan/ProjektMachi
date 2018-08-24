@@ -90,13 +90,36 @@ public class MachiTestSteps {
 	    throw new PendingException();
 	}
 
-
-
-
 	
-	//Userstory2: Select activity date	
+	//Userstory2: Select activity date and time. 
 	
-	
+	@When("^I select boka$")
+	public void i_select_boka() throws Throwable {
+	    stm.clickByXPath("//*[@id=\"navbar-collapse\"]/ul[1]/li[1]/a");
+	}
+
+	@When("^I search for \"([^\"]*)\"$")
+	public void i_search_for(String arg1) throws Throwable {
+	    stm.enterSearchTextCss(arg1, "#q");
+	}
+
+	@When("^I click a time$")
+	public void i_click_a_time() throws Throwable {
+	    stm.clickByXPath("//*[@id=\"slots_18\"]/ul/li[1]/button");
+	}
+
+	@Then("^I see the available courts for that time$")
+	public void i_see_the_available_courts_for_that_time() throws Throwable {
+	  			
+		if (!stm.getTextByXpath("//*[@class=\"list-group-item\"]/h6").contains("Tillgängliga tider")) {
+						
+			throw new Exception();
+		} else {
+			
+			stm.closeWebDriver();
+		}	   
+	}
+		
 	
 	//User story1: Search for a sport hall
 	

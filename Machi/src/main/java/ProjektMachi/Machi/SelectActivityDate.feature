@@ -1,7 +1,7 @@
 Feature: As a customer I want to select a date and a time for the sport activity
 
   Scenario: search for a sportshall and check for available times
-    Given I am logged in Matchi
+    Given I am logged in to Matchi
     When  I select boka
     And   I select a sport
     And   I search for "Höno"

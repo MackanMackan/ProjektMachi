@@ -142,8 +142,6 @@ public class MachiTestSteps {
 	    //stm.clickByXPath("//*[@id=\"facilities-result\"]/div/div[1]/div/div[1]/div[1]/div/div[2]/h3/a");
 	    
 	}
-
-
-	}
+}
 
 

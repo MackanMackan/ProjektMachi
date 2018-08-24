@@ -93,4 +93,7 @@ public class SeleniumTestMethods {
 
 		webDriver.close();
 	}
+	public void quitWebDriver() {
+		webDriver.quit();
+	}
 }

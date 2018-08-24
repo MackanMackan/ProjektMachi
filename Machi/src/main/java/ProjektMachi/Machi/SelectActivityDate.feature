@@ -1,6 +1,6 @@
-Feature: As a customer I want to select a date for the sport activity
+Feature: As a customer I want to select a date and a time for the sport activity
 
-  Scenario: select a date
+  Scenario: search for a sportshall and check for available times
     Given I am logged in Matchi
     When  I select boka
     And   I select a sport

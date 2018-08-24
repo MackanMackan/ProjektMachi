@@ -67,7 +67,7 @@ public class MachiTestSteps {
 
 	@When("^chosen a specific time$")
 	public void chosen_a_specific_time() throws Throwable {
-	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[5]");
+	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[8]");
 	}
 
 	@Then("^I can book a court$")

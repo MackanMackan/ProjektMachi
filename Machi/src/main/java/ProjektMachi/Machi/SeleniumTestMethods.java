@@ -89,8 +89,8 @@ public class SeleniumTestMethods {
 	}
 	
 	
-	public void selectDate() {
+	public void closeWebDriver() {
 
-
+		webDriver.close();
 	}
 }

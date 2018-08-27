@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="5" time="118.137872">
+<testcase classname="As customer I want to be able to book one or several courts." name="Book a court." time="23.719531">
+<skipped><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And chosen a specific court.................................................passed
+And chosen a specific time..................................................passed
+Then I can book a court.....................................................pending
+]]></skipped>
+</testcase>
+<testcase classname="As customer I want to be able to book one or several courts." name="Book several courts" time="16.857936">
+<skipped><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................undefined
+When I search for available courts..........................................skipped
+And click on the "Boka flera" button........................................skipped
+And chosen a specific court.................................................skipped
+And chosen a specific time..................................................skipped
+Then I can book more than one court.........................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="As a customer I want to log in to be able to get access to the bookingsystem" name="Log in to Machi website" time="20.194619">
+<system-out><![CDATA[Given I am on the Machi site................................................passed
+And I have not logged in....................................................passed
+When I use username "mjukvarutestare4@mailinator.com" and password "mjukvarutestare".passed
+And I click the log in button...............................................passed
+Then I am logged in.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer i want to search for a sport hall so that i can book it" name="Search for Sport Hall" time="34.113902">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+When I enter the "Hönö" of a Sport Hall.....................................passed
+And As I click the name of the Sport Hall...................................passed
+Then Can choose the clicked Sport Hall for booking..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer I want to select a date and a time for the sport activity" name="search for a sportshall and check for available times" time="23.251884">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+When I select boka..........................................................passed
+And I search for "Höno".....................................................passed
+And I click a time..........................................................passed
+Then I see the available courts for that time...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
